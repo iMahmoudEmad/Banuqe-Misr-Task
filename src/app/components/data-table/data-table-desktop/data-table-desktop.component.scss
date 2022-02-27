@@ -1,0 +1,39 @@
+.container {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    padding: 1rem 1.5rem;
+    background-color: #f7f9fc;
+    color: #222b45;
+    border: 1px solid #edf1f7;
+    text-align: start;
+
+    .th-background {
+      background-color: #f7f9fc;
+      line-height: 2;
+    }
+
+    * {
+      text-transform: capitalize;
+    }
+  }
+}
+
+:host ::ng-deep td {
+  background-color: #fff;
+  border: 1px solid #edf1f7;
+
+  .value {
+    display: flex;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.5px;
+  }
+}

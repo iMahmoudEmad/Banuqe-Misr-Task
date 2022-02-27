@@ -1,0 +1,25 @@
+.pageTitle {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
+  flex-wrap: wrap;
+
+  .textField,
+  .ctaButton {
+    outline: none;
+  }
+
+  .textField {
+    height: 150px;
+    padding: 1rem;
+    flex-basis: 100%;
+    resize: none;
+    border-radius: 0.25rem;
+  }
+}

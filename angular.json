@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "banque-misr-task": {
+    "banque-misr": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/banque-misr-task",
+            "outputPath": "dist/banque-misr",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "banque-misr-task:build:production"
+              "browserTarget": "banque-misr:build:production"
             },
             "development": {
-              "browserTarget": "banque-misr-task:build:development"
+              "browserTarget": "banque-misr:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "banque-misr-task:build"
+            "browserTarget": "banque-misr:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "banque-misr-task"
+  "defaultProject": "banque-misr"
 }

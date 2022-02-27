@@ -1,0 +1,36 @@
+<ng-container *ngIf="mappedData?.length">
+  <div *ngFor="let item of mappedData; let idx = index">
+    <div
+      class="header"
+      (click)="headerIdx === idx ? (headerIdx = '') : (headerIdx = idx)"
+    >
+      <span>{{ item?.food }}</span>
+      <span>{{ headerIdx === idx ? "-" : "+" }}</span>
+    </div>
+    <div
+      class="value"
+      [style.display]="headerIdx === idx ? 'flex' : 'none'"
+      [class.show]="headerIdx === idx"
+    >
+      <div>
+        <span>Qty</span>
+        <span>{{ item?.quantity | number: "1.0-1" }}</span>
+      </div>
+      <div>
+        <span>Unit</span>
+        <span>{{ item?.unit }}</span>
+      </div>
+      <div>
+        <span>Calories</span>
+        <span>
+          {{ item?.calories?.quantity | number: "1.0-1" }}
+          {{ item?.calories?.unit }}
+        </span>
+      </div>
+      <div>
+        <span>Weight</span>
+        <span>{{ item?.weight | number: "1.0-1" }}</span>
+      </div>
+    </div>
+  </div>
+</ng-container>

@@ -1,0 +1,142 @@
+<div class="totalNutrition">
+  <h2 class="bb-2">Nutrition Facts</h2>
+  <h4 class="bb-2">
+    Calories
+    <span>{{ totalNutritionData?.calories | number: "1.0-0" }}</span>
+  </h4>
+  <div class="d-flex">
+    <div class="bt-1 p-1">
+      <span>
+        Total fat
+        {{ totalNutritionData?.fat?.value?.quantity | number: "1.0-1" }}
+        {{ totalNutritionData?.fat?.value?.unit }}
+      </span>
+      <span>
+        {{ totalNutritionData?.fat?.percentage?.quantity | number: "1.0-0" }}
+        {{ totalNutritionData?.fat?.percentage?.unit }}
+      </span>
+    </div>
+    <div class="bt-1 p-1">
+      <span>
+        Cholesterol
+        {{ totalNutritionData?.cholesterol?.value?.quantity | number: "1.0-1" }}
+        {{ totalNutritionData?.cholesterol?.value?.unit }}
+      </span>
+      <span>
+        {{
+          totalNutritionData?.cholesterol?.percentage?.quantity
+            | number: "1.0-0"
+        }}
+        {{ totalNutritionData?.cholesterol?.percentage?.unit }}
+      </span>
+    </div>
+    <div class="bt-1 p-1">
+      <span>
+        Sodium
+        {{ totalNutritionData?.sodium?.value?.quantity | number: "1.0-1" }}
+        {{ totalNutritionData?.sodium?.value?.unit }}
+      </span>
+      <span>
+        {{ totalNutritionData?.sodium?.percentage?.quantity | number: "1.0-0" }}
+        {{ totalNutritionData?.sodium?.percentage?.unit }}
+      </span>
+    </div>
+    <div class="bt-1 p-1">
+      <span>
+        Carbohydrate
+        {{
+          totalNutritionData?.carbohydrate?.value?.quantity | number: "1.0-1"
+        }}
+        {{ totalNutritionData?.carbohydrate?.value?.unit }}
+      </span>
+      <span>
+        {{
+          totalNutritionData?.carbohydrate?.percentage?.quantity
+            | number: "1.0-0"
+        }}
+        {{ totalNutritionData?.carbohydrate?.percentage?.unit }}
+      </span>
+    </div>
+    <div class="bt-1 ms-1 p-1">
+      <span>
+        Dietary Fiber
+        {{ totalNutritionData?.fiber?.value?.quantity | number: "1.0-1" }}
+        {{ totalNutritionData?.fiber?.value?.unit }}
+      </span>
+      <span>
+        {{ totalNutritionData?.fiber?.percentage?.quantity | number: "1.0-0" }}
+        {{ totalNutritionData?.fiber?.percentage?.unit }}
+      </span>
+    </div>
+    <div class="bt-1 ms-1 p-1">
+      <span>
+        Total Sugar
+        {{ totalNutritionData?.sugar?.quantity | number: "1.0-1" }}
+        {{ totalNutritionData?.sugar?.unit }}
+      </span>
+    </div>
+    <div class="bt-1 p-1">
+      <span>
+        Protein
+        {{ totalNutritionData?.protein?.value?.quantity | number: "1.0-1" }}
+        {{ totalNutritionData?.protein?.value?.unit }}
+      </span>
+      <span>
+        {{
+          totalNutritionData?.protein?.percentage?.quantity | number: "1.0-0"
+        }}
+        {{ totalNutritionData?.protein?.percentage?.unit }}
+      </span>
+    </div>
+    <div class="bt-1 p-1">
+      <span>
+        Vitamin
+        {{ totalNutritionData?.vitamin?.value?.quantity | number: "1.0-1" }}
+        {{ totalNutritionData?.vitamin?.value?.unit }}
+      </span>
+      <span>
+        {{
+          totalNutritionData?.vitamin?.percentage?.quantity | number: "1.0-0"
+        }}
+        {{ totalNutritionData?.vitamin?.percentage?.unit }}
+      </span>
+    </div>
+    <div class="bt-1 p-1">
+      <span>
+        Calcium
+        {{ totalNutritionData?.calcium?.value?.quantity | number: "1.0-1" }}
+        {{ totalNutritionData?.calcium?.value?.unit }}
+      </span>
+      <span>
+        {{
+          totalNutritionData?.calcium?.percentage?.quantity | number: "1.0-0"
+        }}
+        {{ totalNutritionData?.calcium?.percentage?.unit }}
+      </span>
+    </div>
+    <div class="bt-1 p-1">
+      <span>
+        Iron
+        {{ totalNutritionData?.iron?.value?.quantity | number: "1.0-1" }}
+        {{ totalNutritionData?.iron?.value?.unit }}
+      </span>
+      <span>
+        {{ totalNutritionData?.iron?.percentage?.quantity | number: "1.0-0" }}
+        {{ totalNutritionData?.iron?.percentage?.unit }}
+      </span>
+    </div>
+    <div class="bt-1 p-1">
+      <span>
+        Potassium
+        {{ totalNutritionData?.potassium?.value?.quantity | number: "1.0-1" }}
+        {{ totalNutritionData?.potassium?.value?.unit }}
+      </span>
+      <span>
+        {{
+          totalNutritionData?.potassium?.percentage?.quantity | number: "1.0-0"
+        }}
+        {{ totalNutritionData?.potassium?.percentage?.unit }}
+      </span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <table cellspacing="0" cellpadding="0">
+    <tr *ngIf="columns">
+      <th *ngFor="let column of columns" class="th-background">
+        <span>{{ column }}</span>
+      </th>
+    </tr>
+    <ng-container *ngFor="let item of mappedData">
+      <tr *ngIf="item?.quantity">
+        <td>
+          <span class="value">{{ item?.quantity | number: "1.0-1" }}</span>
+        </td>
+        <td>
+          <span class="value">{{ item?.unit }}</span>
+        </td>
+        <td>
+          <span class="value">{{ item?.food }}</span>
+        </td>
+        <td>
+          <span class="value">
+            {{ item?.calories?.quantity | number: "1.0-1" }}
+            {{ item?.calories?.unit }}
+          </span>
+        </td>
+        <td>
+          <span class="value">{{ item?.weight | number: "1.0-1" }} g</span>
+        </td>
+      </tr>
+    </ng-container>
+  </table>
+</div>

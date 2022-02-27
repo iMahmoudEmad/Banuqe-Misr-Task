@@ -1,0 +1,45 @@
+.bt-1,
+.ms-1 {
+  &.p-1 {
+    padding: 0.5rem;
+  }
+}
+
+.bb-2 {
+  border-bottom: 2px solid #333;
+}
+
+.bt-1 {
+  border-top: 1px solid #333;
+}
+
+.ms-1 {
+  margin-inline-start: 1rem;
+}
+
+.totalNutrition {
+  width: 500px;
+  max-width: 100%;
+  border: 1px solid #333;
+  margin: 2rem auto;
+  padding: 0.5rem;
+
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-basis: 100%;
+
+      & span:first-of-type {
+        font-weight: 700;
+      }
+    }
+  }
+}

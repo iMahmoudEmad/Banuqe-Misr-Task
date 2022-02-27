@@ -1,5 +1,5 @@
 {
-  "name": "banque-misr-task",
+  "name": "banque-misr",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

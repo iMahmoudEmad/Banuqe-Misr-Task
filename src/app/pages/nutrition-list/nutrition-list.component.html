@@ -1,0 +1,29 @@
+<div *ngIf="mappedData?.length" class="container">
+  <h1>Nutrition List</h1>
+
+  <div class="only-desktop">
+    <app-data-table-desktop
+      [columns]="portfolioColumns"
+      [mappedData]="mappedData"
+    >
+    </app-data-table-desktop>
+  </div>
+
+  <div class="only-tablet">
+    <app-data-table-mobile [mappedData]="mappedData"> </app-data-table-mobile>
+  </div>
+
+  <div class="ctaPosition">
+    <button (click)="toggleShowTotalNutrition()" class="ctaButton">
+      Total Nutrition
+    </button>
+  </div>
+
+  <ng-container *ngIf="isShownTotalNutrition">
+    <app-total-nutrition
+      [totalNutritionData]="totalNutritionMappedData"
+    ></app-total-nutrition>
+  </ng-container>
+</div>
+
+<p *ngIf="!mappedData?.length" class="text-center">No Data Found!</p>

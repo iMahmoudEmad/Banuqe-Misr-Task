@@ -1,0 +1,39 @@
+.header,
+.value,
+.value div {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header,
+.value div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header,
+.value {
+  background-color: #f7f9fc;
+}
+
+.header {
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-top: 1rem;
+  border-bottom: 1px solid #edf1f7;
+
+  span:first-of-type {
+    letter-spacing: 1px;
+  }
+}
+
+.value div {
+  flex-basis: 100%;
+
+  span {
+    flex-basis: 50%;
+    padding: 1rem;
+    border: 1px solid #edf1f7;
+  }
+}
